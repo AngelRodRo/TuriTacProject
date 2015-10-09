@@ -12,5 +12,35 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
+});
+
+
+/*
+|--------------------------------------------------------------------------
+| API routes
+|--------------------------------------------------------------------------
+*/
+
+Route::group(['prefix' => 'api', 'namespace' => 'API'], function ()
+{
+	Route::group(['prefix' => 'v1'], function ()
+	{
+        require Config::get('generator.path_api_routes');
+	});
+});
+
+
+/*
+|--------------------------------------------------------------------------
+| API routes
+|--------------------------------------------------------------------------
+*/
+
+Route::group(['prefix' => 'api', 'namespace' => 'API'], function ()
+{
+	Route::group(['prefix' => 'v1'], function ()
+	{
+        require Config::get('generator.path_api_routes');
+	});
 });
