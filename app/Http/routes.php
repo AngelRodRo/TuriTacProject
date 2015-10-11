@@ -15,14 +15,18 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
-
-Route::get('/results',function(){
-	return view('pages.results');
+Route::get('/results', function(){
+	return View('pages.results');
 });
 
-Route::get('admin',function(){
-	return view('pages.admin');
+Route::group(array('namespace'=>'Admin'), function()
+{
+	Route::get('/admin', array('as' => 'admin', 'uses' => 'LoginController@index'));
+	Route::get('/admin/register', array('as' => 'register', 'uses' => 'LoginController@register'));
+	Route::get('/admin/register', array('as' => 'register', 'uses' => 'LoginController@register'));
+
 });
+
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
