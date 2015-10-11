@@ -73,3 +73,11 @@ Route::get('places/{id}/delete', [
     'as' => 'places.delete',
     'uses' => 'PlaceController@destroy',
 ]);
+
+
+Route::resource('places', 'PlaceController');
+
+Route::get('places/{id}/delete', [
+    'as' => 'places.delete',
+    'uses' => 'PlaceController@destroy',
+]);

@@ -55,7 +55,7 @@ class PlaceController extends AppBaseController
 
 		$place = $this->placeRepository->create($input);
 
-		Flash::success('Lugar guardado correctamente');
+		Flash::success('Place saved successfully.');
 
 		return redirect(route('places.index'));
 	}
@@ -73,7 +73,7 @@ class PlaceController extends AppBaseController
 
 		if(empty($place))
 		{
-			Flash::error('Lugar no encontrado');
+			Flash::error('Place not found');
 
 			return redirect(route('places.index'));
 		}
@@ -94,7 +94,7 @@ class PlaceController extends AppBaseController
 
 		if(empty($place))
 		{
-			Flash::error('Lugar no encontrado');
+			Flash::error('Place not found');
 
 			return redirect(route('places.index'));
 		}
@@ -116,14 +116,14 @@ class PlaceController extends AppBaseController
 
 		if(empty($place))
 		{
-			Flash::error('Lugar no encontrado');
+			Flash::error('Place not found');
 
 			return redirect(route('places.index'));
 		}
 
 		$place = $this->placeRepository->updateRich($request->all(), $id);
 
-		Flash::success('Lugar actualizado correctamente');
+		Flash::success('Place updated successfully.');
 
 		return redirect(route('places.index'));
 	}
@@ -141,14 +141,14 @@ class PlaceController extends AppBaseController
 
 		if(empty($place))
 		{
-			Flash::error('Lugar no encontrado');
+			Flash::error('Place not found');
 
 			return redirect(route('places.index'));
 		}
 
 		$this->placeRepository->delete($id);
 
-		Flash::success('Lugar eliminado correctamente');
+		Flash::success('Place deleted successfully.');
 
 		return redirect(route('places.index'));
 	}

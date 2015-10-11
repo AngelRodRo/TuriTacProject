@@ -36,6 +36,7 @@ class Place extends Model
 		"address" => "required",
 		"category" => "required",
 		"schedule" => "required",
+		"phone" => "required",
 		"description" => "required"
 	];
 

@@ -1,7 +1,7 @@
-@extends('layout.master_admin')
+@extends('app')
 
 @section('content')
-<div class="container" style="margin-top: 75px;">
+<div class="container">
 	 @include('places.show_fields')
 </div>
 @endsection
