@@ -5,7 +5,7 @@
             <div class="Absolute-Center is-Responsive">
                 <div class="phrase container" >
                     <h1>
-                        <p class="text-center">FRASE MOTIVADORA</p>
+                        <p class="title text-center">Viajar es como amar, es un intento de transformar un sueño en realidad</p>
                     </h1>
                 </div>
                 <div class="container" >
