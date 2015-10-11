@@ -1,12 +1,12 @@
-<table class="table">
+<table class="table table-responsive">
     <thead>
-    <th>Name</th>
-			<th>Address</th>
-			<th>Category</th>
-			<th>Schedule</th>
-			<th>Phone</th>
-			<th>Description</th>
-    <th width="50px">Action</th>
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Categoria</th>
+        <th>Horario</th>
+        <th>Telefono</th>
+        <th>Descripcion</th>
+        <th width="50px">Action</th>
     </thead>
     <tbody>
     @foreach($places as $place)

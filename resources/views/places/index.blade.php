@@ -1,19 +1,19 @@
-@extends('app')
+@extends('layout.master_admin')
 
 @section('content')
 
-    <div class="container">
+    <div class="container" style="margin-top: 75px;">
 
         @include('flash::message')
 
         <div class="row">
-            <h1 class="pull-left">Places</h1>
-            <a class="btn btn-primary pull-right" style="margin-top: 25px" href="{!! route('places.create') !!}">Add New</a>
+            <h1 class="pull-left">Lugares</h1>
+            <a class="btn btn-primary pull-right" style="margin-top: 25px" href="{!! route('places.create') !!}">Añadir nuevo</a>
         </div>
 
         <div class="row">
             @if($places->isEmpty())
-                <div class="well text-center">No Places found.</div>
+                <div class="well text-center">Ningun lugar encontrado</div>
             @else
                 @include('places.table')
             @endif
