@@ -57,7 +57,7 @@ return [
             'host'      => env('DB_HOST', 'localhost'),
             'database'  => env('DB_DATABASE', 'turitac'),
             'username'  => env('DB_USERNAME', 'root'),
-            'password'  => env('DB_PASSWORD', 'su123per'),
+            'password'  => env('DB_PASSWORD', 'compu952877361'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

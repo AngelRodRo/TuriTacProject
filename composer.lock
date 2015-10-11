@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "7229e1517fb4e5ac76c75074a5a07cee",
+    "content-hash": "0202e5c03c2123d74ed0bcc1760f4ba7",
     "packages": [
         {
             "name": "bosnadev/repositories",
